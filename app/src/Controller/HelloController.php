@@ -20,7 +20,9 @@ class HelloController
      *
      * @return \Symfony\Component\HttpFoundation\Response HTTP response
      *
-     * @Route("/{name}")
+     * @Route("/{name}",
+     *     defaults={"name":"World"},
+     *     requirements={"name":"[a-zA-Z]+)
      */
     public function index(string $name): Response
     {
