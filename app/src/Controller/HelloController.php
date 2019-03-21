@@ -22,7 +22,7 @@ class HelloController
      *
      * @Route("/{name}",
      *     defaults={"name":"World"},
-     *     requirements={"name":"[a-zA-Z]+})
+     *     requirements={"name":"[a-zA-Z]+"})
      */
     public function index(string $name): Response
     {
